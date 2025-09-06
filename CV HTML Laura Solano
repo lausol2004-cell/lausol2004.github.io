@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Currículum Vitae - Laura Carolina Solano Méndez</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+  :root {
+    --primary-color: #667eea;
+    --secondary-color: #764ba2;
+    --accent-color: #9f7aea;
+    --text-color: #333;
+    --bg-color: #f9fafb;
+    --border-radius: 8px;
+    --transition: 0.3s ease;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+    padding: 30px 40px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--primary-color);
+  }
+  header h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: 0;
+  }
+  .contact-info {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  section h3 {
+    border-left: 5px solid var(--primary-color);
+    padding-left: 12px;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .skill-bar {
+    background: #e0e7ff;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+  }
+  .skill-progress {
+    height: 12px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transition: width 1.2s ease-in-out;
+  }
+  .experience-item, .education-item {
+    margin-bottom: 20px;
+  }
+  .experience-item h4, .education-item h4 {
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  .experience-item span, .education-item span {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .experience-item ul {
+    margin-top: 8px;
+  }
+  .highlight {
+    background: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  .profile-summary {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  .footer-note {
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+    margin-top: 40px;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Currículum Vitae de Laura Carolina Solano Méndez">
+    <header>
+      <div>
+        <h1>Laura Carolina Solano Méndez</h1>
+        <h2>Community Manager & Especialista en Publicidad Digital</h2>
+        <div class="contact-info" aria-label="Información de contacto">
+          <a href="mailto:lauramenezsolano409@gmail.com" aria-label="Correo electrónico">✉ lauramenezsolano409@gmail.com</a>
+          <span aria-label="Teléfono">📞 +58 0412-2692693</span>
+          <br />
+          <span>📍 Maracaibo, Zulia, Venezuela</span>
+        </div>
+      </div>
+    </header>
+
+    <section aria-labelledby="perfil-profesional">
+      <h3 id="perfil-profesional">Perfil Profesional</h3>
+      <p class="profile-summary">
+        Especialista en desarrollo y posicionamiento de marcas emergentes con más de 5 años de experiencia en community management, publicidad digital y creación de contenido. Experta en impulsar cuentas en ascenso, garantizando crecimiento orgánico y engagement mediante estrategias innovadoras y análisis de datos.
+      </p>
+    </section>
+
+    <section aria-labelledby="experiencia-laboral">
+      <h3 id="experiencia-laboral">Experiencia Laboral</h3>
+
+      <article class="experience-item" aria-label="Coordinadora en Esperanza de San Pablo">
+        <h4>Coordinadora <span class="highlight">6 años</span></h4>
+        <span>Esperanza de San Pablo</span>
+        <ul>
+          <li>Coordiné grupos intergeneracionales desde mi juventud, integrando personas de todas las edades.</li>
+          <li>Fomenté la participación activa y el desarrollo comunitario en un ambiente inclusivo y colaborativo.</li>
+          <li>Gestioné actividades y proyectos que promovieron la cohesión social y el bienestar colectivo.</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-label="Community Manager Freelance en artigasydelgado">
+        <h4>Community Manager Freelance <span class="highlight">2025 - Presente</span></h4>
+        <span>artigasydelgado</span>
+        <ul>
+          <li>Coordinación y supervisión de estrategias digitales para posicionar la marca desde su lanzamiento.</li>
+          <li>Gestión integral de redes sociales, creación y curación de contenido visual y escrito.</li>
+          <li>Monitoreo y análisis de métricas para optimizar campañas y mejorar el engagement.</li>
+          <li>Implementación de buenas prácticas y mejora continua en comunicación digital.</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-label="Community Manager en Kisbel Accesorios">
+        <h4>Community Manager <span class="highlight">2024 - Diciembre 2024</span></h4>
+        <span>Kisbel Accesorios</span>
+        <ul>
+          <li>Lanzamiento y desarrollo de la marca, logrando un crecimiento del 25% en seguidores en 6 meses.</li>
+          <li>Fotografía, edición y diseño de contenido visual atractivo y alineado con la identidad de marca.</li>
+          <li>Gestión de reportes de desempeño y análisis en Microsoft Excel.</li>
+          <li>Promoción y posicionamiento en plataformas sociales clave.</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-label="Community Manager en Batyfit">
+        <h4>Community Manager <span class="highlight">2024 - Junio 2025</span></h4>
+        <span>Batyfit</span>
+        <ul>
+          <li>Desarrollo de la marca desde su introducción al mercado con enfoque en alimentación saludable.</li>
+          <li>Aumento del 30% en la audiencia mediante estrategias orgánicas y campañas digitales.</li>
+          <li>Creación de contenido saludable y promoción de productos con alto impacto visual.</li>
+          <li>Interacción activa con la comunidad y gestión de comentarios para mejorar la experiencia del usuario.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="educacion">
+      <h3 id="educacion">Educación</h3>
+      <article class="education-item" aria-label="Licenciatura en Publicidad y Relaciones Públicas">
+        <h4>Licenciatura en Publicidad y Relaciones Públicas <span class="highlight">En curso</span></h4>
+        <span>Universidad del Zulia - 9no semestre</span>
+      </article>
+      <article class="education-item" aria-label="Curso de Diseño Gráfico Nivel 1">
+        <h4>Diseño Gráfico Nivel 1 <span class="highlight">2018</span></h4>
+        <span>Logros</span>
+      </article>
+    </section>
+
+    <section aria-labelledby="habilidades">
+      <h3 id="habilidades">Habilidades</h3>
+      <ul>
+        <li>
+          Publicidad Digital
+          <div class="skill-bar" aria-label="Nivel de habilidad en Publicidad Digital: 90%">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </li>
+        <li>
+          Gestión de Redes Sociales
+          <div class="skill-bar" aria-label="Nivel de habilidad en Gestión de Redes Sociales: 85%">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+        </li>
+        <li>
+          Análisis de Datos
+          <div class="skill-bar" aria-label="Nivel de habilidad en Análisis de Datos: 80%">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+        </li>
+        <li>
+          Fotografía
+          <div class="skill-bar" aria-label="Nivel de habilidad en Fotografía: 75%">
+            <div class="skill-progress" style="width: 75%;"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="herramientas-tecnicas">
+      <h3 id="herramientas-tecnicas">Herramientas Técnicas</h3>
+      <ul>
+        <li>Canva (Avanzado)</li>
+        <li>CapCut (Intermedio)</li>
+        <li>Microsoft Excel (Intermedio)</li>
+        <li>Facebook Business Suite</li>
+        <li>Instagram Professional</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="idiomas">
+      <h3 id="idiomas">Idiomas</h3>
+      <ul>
+        <li>Español (Nativo)</li>
+        <li>Inglés (Intermedio)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="logros">
+      <h3 id="logros">Logros Destacados</h3>
+      <ul>
+        <li>+30% crecimiento de audiencia en Batyfit mediante estrategias orgánicas.</li>
+        <li>+25% engagement en campañas digitales para Kisbel Accesorios.</li>
+        <li>Desarrollo y posicionamiento exitoso de 3 marcas desde su lanzamiento.</li>
+        <li>Implementación de mejora continua y buenas prácticas en gestión digital.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="objetivo-laboral">
+      <h3 id="objetivo-laboral">Objetivo Laboral</h3>
+      <p>
+        Postulo para la vacante de Coordinadora de Aseguramiento de Calidad, aportando más de 5 años de experiencia en coordinación, supervisión y mejora continua de procesos digitales. Mi enfoque en comunicación efectiva, análisis de datos y gestión de equipos me permite actuar como nexo entre áreas, garantizando el cumplimiento de estándares técnicos y funcionales.
+      </p>
+    </section>
+
+    <footer class="footer-note" aria-label="Nota final">
+      <p>Disponible para entrevista y pronta incorporación. Gracias por considerar mi candidatura.</p>
+    </footer>
+  </div>
+</body>
+</html>
